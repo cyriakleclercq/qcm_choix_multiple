@@ -191,6 +191,10 @@ $("#reponse_b").click(function () {
     }
 });
 
+$("#replay").click(function () {
+    location.reload();
+});
+
 
 
 
