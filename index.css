@@ -1,6 +1,8 @@
 
 body {
-    background-image: url("ciel etoile.jpg");
+    background-image: url("gif ciel etoile.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: whitesmoke;
 }
 #section {
