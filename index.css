@@ -1,9 +1,10 @@
 
 body {
-    background-image: url("gif ciel etoile.gif");
-    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+
     background-size: 100%;
-    color: whitesmoke;
+
 }
 #section {
     border: solid;
@@ -32,9 +33,19 @@ h1, h2 {
 }
 
 p, span {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 div {
     font-size: 20px;
 }
+
+#breponse {
+    color: green;
+}
+
+#mreponse {
+    color: red;
+}
+
+
