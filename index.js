@@ -15,7 +15,9 @@ $("#page1").show();
 $("#page2").hide();
 
 var scoreU=[];
+
 var bon = [];
+
 var mauvais = [];
 
 var score=0;
@@ -34,7 +36,6 @@ for (let s=1;s<=2;s++){
 
     $('#reponse_'+s).click(function () {
 
-            i++;
 
 
 
@@ -43,17 +44,19 @@ for (let s=1;s<=2;s++){
         if (quizz[i].value===$('#reponse_'+s).text()){
 
             bon.push($('#reponse_'+s).text()+"<br>");
+
             score++;
 
         } else {
+
             mauvais.push($('#reponse_'+s).text()+"<br>");
 
         }
 
 
-            if (c > 9){
+            if (c === 9){
 
-                $("#page1").hide();
+                $("#page1").remove();
 
                 $("#page2").show();
 
@@ -61,26 +64,18 @@ for (let s=1;s<=2;s++){
 
                 $('#breponse').html("<br>"+bon);
 
-
-
                 $('#mreponse').html("<br>"+mauvais);
 
 
             }
 
+        if (i <= 10) {
 
-            c++;
-
-            console.log(i);
-
-            console.log(c);
-
-        if (i <= 9) {
-
-
+        i++;
 
             $('#page1').hide();
-            $('#page1').slideDown();
+
+            $('#page1').slideDown(2000);
 
             $('#question').html(quizz[i].question);
 
@@ -90,15 +85,9 @@ for (let s=1;s<=2;s++){
 
             $('#reponse_2').html(quizz[i].rep2);
 
-
-
-
-
+c++;
 
         }
-
-
-
 
     }
 
