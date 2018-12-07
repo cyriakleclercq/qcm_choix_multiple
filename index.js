@@ -55,7 +55,7 @@ for (let s=1;s<=2;s++){
 
                 $("#page1").remove();
 
-                $("#page2").show();
+                $("#page2").slideDown(2000);
 
                 $("#answer").text(score);
 
@@ -72,7 +72,7 @@ for (let s=1;s<=2;s++){
 
             $('#page1').hide();
 
-            $('#page1').slideDown();
+            $('#page1').slideDown(1500);
 
             $('#question').html(quizz[i].question);
 
@@ -80,7 +80,7 @@ for (let s=1;s<=2;s++){
 
             $('#reponse_2').html(quizz[i].rep2);
 
-c++;
+        c++;
 
         }
 
