@@ -3,7 +3,7 @@ var quizz=[{question:"Pourquoi les rois dormaient ils assis ?" ,value:"Par peur 
     {question:"Quel est la couleur du cheval Blanc d'Henry IV ?",value:"Noir",rep1:"Blanc",rep2:"Noir"},
     {question:"Combien de film compte Harrry Potter ?",value:"huit",rep1:"sept",rep2:"huit"},
     {question:"Pourquoi le kiwi porte il son nom ?",value:"Sa peau rappelle celle de l'oiseau portant le même nom",rep1:"Il porte le nom de celui qui l'a découvert Gertz Kiwi",rep2:"Sa peau rappelle celle de l'oiseau portant le même nom"},
-    {question:"Pourquoi dit-on ''Santé'' lorsque l'on trinque ?",value:"Au moyen âge, on pensait l'ivresse bénéfique",rep1:"Au moyen âge, on pensait l'ivresse bénéfique ",rep2:"Dans l'antiquité on pensait l'alcool signe de richesse et donc de santé"},
+    {question:"Pourquoi dit-on ''Santé'' lorsque l'on trinque ?",value:"Au moyen âge, on pensait l'ivresse bénéfique",rep1:"Au moyen âge, on pensait l'ivresse bénéfique",rep2:"Dans l'antiquité on pensait l'alcool signe de richesse et donc de santé"},
     {question:"Pourquoi voit on la lune en plein jour ?",value:"La lumière du soleil se reflète sur sa surface",rep1:"La lumière du soleil se reflète sur sa surface",rep2:"La lune a son propre rayonnement"},
     {question:"Pourquoi votre chat miaule t-il la nuit ?",value:"Pour attirer votre attention",rep1:"Pour attirer le sexe opposé",rep2:"Pour attirer votre attention"},
     {question:"Pourquoi les oiseaux chantent ils ?",value:"pour séduire les femelles",rep1:"Pour communiquer",rep2:"pour séduire les femelles"},
@@ -36,20 +36,17 @@ for (let s=1;s<=2;s++){
 
     $('#reponse_'+s).click(function () {
 
-
-
-
             scoreU.push($('#reponse_'+s).text()+"<br>");
 
         if (quizz[i].value===$('#reponse_'+s).text()){
 
-            bon.push($('#reponse_'+s).text()+"<br>");
+            bon.push("<dd>" + quizz[i].question + "</dd>" + $('#reponse_'+s).text()+"<br>");
 
             score++;
 
         } else {
 
-            mauvais.push($('#reponse_'+s).text()+"<br>");
+            mauvais.push("<dd>" + quizz[i].question + "<dd>" +"<ee>" + $('#reponse_'+s).text()+ "</ee>" + "<br>" + "<br>" + "<gg> la bonne réponse étant : </gg>" + "<ff>" + quizz[i].value + "</ff>" + "<br>");
 
         }
 
@@ -75,11 +72,9 @@ for (let s=1;s<=2;s++){
 
             $('#page1').hide();
 
-            $('#page1').slideDown(2000);
+            $('#page1').slideDown();
 
             $('#question').html(quizz[i].question);
-
-
 
             $('#reponse_1').html(quizz[i].rep1);
 

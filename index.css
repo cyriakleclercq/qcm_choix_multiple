@@ -1,8 +1,11 @@
 
 body {
+
+    color: whitesmoke;
     padding: 0;
     margin: 0;
-
+    background-image: url("image_fond_uni_gris.jpg");
+    background-repeat: repeat;
     background-size: 100%;
 
 }
@@ -24,28 +27,34 @@ body {
 
 #replay {
     text-align: center;
-    width: 10%;
-    margin-top: 10%;
+    width: 5%;
 }
 
 h1, h2 {
     font-weight: bold;
 }
 
-p, span {
-    font-size: 20px;
-}
-
-div {
-    font-size: 20px;
-}
-
 #breponse {
-    color: green;
+    color: greenyellow;
 }
 
-#mreponse {
+dd {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ee {
     color: red;
 }
+
+ff {
+    color: aqua;
+}
+
+gg {
+    color: #DAECFF;
+}
+
 
 

@@ -7,22 +7,12 @@
         -ms-text-size-adjust: 100%;
 
     }
-
-    body {
-
-        background-size: 160%;
-    }
-
-    #reponse_1, #reponse_2 {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
 }
 
 
 @media (max-device-width: 800px) and (orientation: landscape) {
     html {
+        background-image: url("image_fond_uni_gris.jpg");
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
     }
